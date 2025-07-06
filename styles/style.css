@@ -1,0 +1,53 @@
+/*
+    选择器,选择器{
+        属性 : 属性值 ;(这样一条单独的规则被称为声明)
+        属性 : 属性值 ；
+    }
+    每个规则集都应该包含在成对的 {} 里
+    每个声明里要用 : 将属性与属性值分隔开
+    每个规则集里要用 ; 将每个声明分开
+    可以同时选择多个元素并为它们添加单个规则集 使用 , 分割
+*/
+
+html {
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  background-color: #00539f;
+}
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+p,
+h1 {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+body {
+  width: 600px;
+
+  /*auto 将可用的水平空间平均分配给左右两边*/
+  margin: 0 auto;
+
+  background-color: #ff9500;
+
+  padding: 0 20px 20px 20px;
+
+  /*宽度 样式 颜色设置*/
+  border: 5px solid black;
+}
+h1 {
+  margin: 0;
+  padding: 20px 0;
+  color: #00539f;
+
+  /*阴影与文本的水平偏移量 垂直偏移量 阴影的模糊半径 阴影的基色*/
+  text-shadow: 3px 3px 1px black;
+}
+img {
+  /*给予其块级行为*/
+  display: block;
+  margin: 0 auto;
+  max-width: 500px;
+}
